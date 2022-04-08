@@ -24,6 +24,13 @@ html {
 
 body {
     display: flex;
+    flex-flow: row nowrap;
+    gap: 0;
+
+    background-color: var(--ivory);
+    color: var(--light-navy);
+    font-family: Philosopher;
+    margin: 0;
 }
 /* ----- 2. MAIN ------- */
 /* ----- 3. NAV -------- */
