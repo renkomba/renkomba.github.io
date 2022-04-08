@@ -123,12 +123,12 @@ nav a:hover {
 #nav-links,
 #nav-top {
     display: flex;
-    flex-flow: column nowrap;
     align-items: center;
+    flex-flow: column nowrap;
+    gap: 10vh;
 }
 
 #nav-links {
-    gap: 10vh;
     justify-content: space-around;
     font-size: 1em;
 }
