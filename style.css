@@ -84,6 +84,10 @@ article {
     text-shadow: 0 0 7px var(--light-navy);
 }
 
+#name span {
+    padding: 0 .5em;
+}
+
 #titles {
     flex-direction: column;
 
@@ -115,8 +119,14 @@ nav a:hover {
     padding: .5rem 0;
 }
 
+#nav-links {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
 #site-logo > img {
-    width: 3em;
+    width: 1.5em;
 }
 
 .words {
