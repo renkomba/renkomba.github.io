@@ -24,7 +24,7 @@ html {
 
 body {
     display: flex;
-    flex-flow: row nowrap;
+    /* flex-flow: row nowrap; */
     gap: 0;
 
     background-color: var(--ivory);
@@ -32,6 +32,67 @@ body {
     font-family: Philosopher;
     margin: 0;
 }
+
+a {
+    color: var(--light-navy);
+    cursor: pointer;
+    text-decoration: none;
+}
+
 /* ----- 2. MAIN ------- */
+article {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 1rem;
+
+    border: .25rem solid var(--dark-gold);
+    border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg") 10 round;
+}
+
+#blurb {
+    font-size: clamp(1em, 2.5vw, 1.75em);
+    text-align: center;
+    padding: 0 .5em 0;
+}
+
+#greetings {
+    color: var(--dark-gold);
+    font-size: clamp(1em, 2.75vw, 2em);
+    font-style: italic;
+    font-weight: 900;
+}
+
+#name, #titles {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#name {
+    flex-wrap: wrap;
+
+    color: var(--navy);
+    font-family: Neonderthaw;
+    font-size: clamp(2rem, 8vw, 5rem);
+    margin-bottom: 0;
+    min-width: fit-content;
+    padding: .25em;
+    text-shadow: 0 0 7px var(--light-navy);
+}
+
+#titles {
+    flex-direction: column;
+
+    border-left: .1em double var(--dark-gold);
+    border-right: .1em double var(--dark-gold);
+    border-radius: 5%;
+    font-size: clamp(1.25rem, 4vw, 2.5rem);
+    margin: 0 1em 0;
+}
+
 /* ----- 3. NAV -------- */
 /* ----- 4. QUERIES ---- */
