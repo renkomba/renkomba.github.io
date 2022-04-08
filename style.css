@@ -104,7 +104,7 @@ nav {
     align-items: center;
     flex-flow: column wrap-reverse;
     flex-shrink: 0;
-    justify-content: space-around;
+    justify-content: space-between;
 
     background-color: var(--navy);
     font-size: clamp(.5rem, 7vw, 3rem);
@@ -116,21 +116,22 @@ nav a:hover {
 }
 
 #nav-bottom {
-    padding: .5rem 0;
+    padding: .75rem 0;
+}
+
+#nav-links,
+#nav-top {
+    display: flex;
+    flex-flow: column nowrap;
 }
 
 #nav-links {
-    /* display: flex; */
-    /* flex-flow: column nowrap; */
-    justify-content: space-between;
-    
+    gap: 10vh;
+    justify-content: space-around;
     font-size: 1em;
 }
 
 #nav-top {
-    display: flex;
-    flex-flow: column nowrap;
-    gap: 10vh;
     justify-content: flex-start;
 }
 
