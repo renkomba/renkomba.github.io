@@ -115,7 +115,8 @@ nav a:hover {
     color: var(--gold);
 }
 
-#nav-bottom {
+#nav-bottom,
+#nav-top {
     padding: .75rem 0;
 }
 
@@ -123,6 +124,7 @@ nav a:hover {
 #nav-top {
     display: flex;
     flex-flow: column nowrap;
+    align-items: center;
 }
 
 #nav-links {
