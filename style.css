@@ -21,6 +21,10 @@
 html {
     font-size: 20px;
 }
+
+body {
+    display: flex;
+}
 /* ----- 2. MAIN ------- */
 /* ----- 3. NAV -------- */
 /* ----- 4. QUERIES ---- */
