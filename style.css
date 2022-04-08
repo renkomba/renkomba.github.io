@@ -103,7 +103,7 @@ nav {
     justify-content: space-around;
 
     background-color: var(--navy);
-    font-size: clamp(.5rem, 1.5rem, 3rem);
+    font-size: clamp(.5rem, 7vw, 3rem);
     min-height: 100vh;
 }
 
@@ -116,7 +116,7 @@ nav a:hover {
 }
 
 #site-logo > img {
-    width: .75rem;
+    width: 3em;
 }
 
 .words {
