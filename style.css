@@ -95,4 +95,76 @@ article {
 }
 
 /* ----- 3. NAV -------- */
+nav {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap-reverse;
+    flex-shrink: 0;
+    justify-content: space-around;
+
+    background-color: var(--navy);
+    font-size: clamp(.5rem, 1.5rem, 3rem);
+    min-height: 100vh;
+}
+
+nav a {
+    color: var(--dark-gold);
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+#nav-icons {
+    padding: .5rem 0;
+}
+
+.words {
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    transform: rotate(-90deg);
+}
+
 /* ----- 4. QUERIES ---- */
+/* _____ a. laptops ____ */
+@media only screen and (min-width: 768px) {
+    #blurb {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #titles {
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        border: none;
+    }
+
+    .line {
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg");
+        height: .1em;
+        width: 2vw;
+        margin-top: .25em;
+    }
+}
+
+/* _____ b. desktops ___ */
+@media only screen and (min-width: 1025px) {
+    article {
+        flex-direction: row;
+    }
+
+    #titles {
+        flex-direction: column;
+
+        border-left: .1em double var(--dark-gold);
+        border-right: .1em double var(--dark-gold);
+        border-radius: 5%;
+    }
+
+    .line {
+        display: none;
+    }
+}
