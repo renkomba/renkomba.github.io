@@ -115,6 +115,10 @@ nav a:hover {
     padding: .5rem 0;
 }
 
+#site-logo > img {
+    width: 3rem;
+}
+
 .words {
     align-items: center;
     height: fit-content;
