@@ -84,10 +84,6 @@ article {
     text-shadow: 0 0 7px var(--light-navy);
 }
 
-#name span {
-    padding: 0 .5em;
-}
-
 #titles {
     flex-direction: column;
 
