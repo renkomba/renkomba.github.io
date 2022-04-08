@@ -34,7 +34,7 @@ body {
 }
 
 a {
-    color: var(--light-navy);
+    color: var(--dark-gold);
     cursor: pointer;
     text-decoration: none;
 }
@@ -107,10 +107,6 @@ nav {
     min-height: 100vh;
 }
 
-nav a {
-    color: var(--dark-gold);
-}
-
 nav a:hover {
     color: var(--gold);
 }
@@ -136,7 +132,7 @@ nav a:hover {
 
     #titles {
         align-items: center;
-        flex-wrap: wrap;
+        flex-flow: row nowrap;
         justify-content: space-evenly;
 
         border: none;
