@@ -78,7 +78,7 @@ article {
     color: var(--navy);
     font-family: Neonderthaw;
     font-size: clamp(2rem, 8vw, 5rem);
-    margin-bottom: 0;
+    margin: 0;
     min-width: fit-content;
     padding: .25em;
     text-shadow: 0 0 7px var(--light-navy);
