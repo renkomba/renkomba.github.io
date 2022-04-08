@@ -122,7 +122,10 @@ nav a:hover {
 #nav-links {
     display: flex;
     flex-flow: column nowrap;
-    justify-content: space-evenly;
+    gap: 10vh;
+    justify-content: space-between;
+    
+    font-size: 1em;
 }
 
 #site-logo > img {
