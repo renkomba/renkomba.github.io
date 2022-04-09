@@ -20,6 +20,7 @@
 
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -40,7 +41,19 @@ a {
 }
 
 /* ----- 2. MAIN ------- */
+main {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    gap: 1rem;
 
+    border: .25rem solid var(--dark-gold);
+    border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg") 10 round;
+    overflow-y: scroll;
+}
+
+#photo img {
+    border-bottom: .25rem solid var(--dark-gold);
+}
 
 /* ----- 3. NAV -------- */
 nav {
