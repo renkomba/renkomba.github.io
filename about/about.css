@@ -1,0 +1,101 @@
+/* 
+===========================
+|    TABLE OF CONTENTS    |
+=========================== 
+|    1. GLOBAL            |
+|    2. MAIN              |
+|    3. NAV               |
+|    4. QUERIES           |
+===========================
+*/
+
+/* ----- 1. GLOBAL ----- */
+:root {
+    --ivory: hsl(60, 100%, 97%, 1);
+    --gold: hsl(51, 100%, 50%, 1);
+    --dark-gold: hsl(43, 74%, 49%, 1);
+    --navy: hsl(208, 100%, 7%, 1);
+    --light-navy: hsl(208, 100%, 20%, 1);
+}
+
+html {
+    font-size: 20px;
+}
+
+body {
+    display: flex;
+    /* flex-flow: row nowrap; */
+    gap: 0;
+
+    background-color: var(--ivory);
+    color: var(--light-navy);
+    font-family: Philosopher;
+    margin: 0;
+}
+
+a {
+    color: var(--dark-gold);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* ----- 2. MAIN ------- */
+
+
+/* ----- 3. NAV -------- */
+nav {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap-reverse;
+    flex-shrink: 0;
+    justify-content: space-between;
+
+    background-color: var(--navy);
+    font-size: clamp(.5rem, 5vw, 3rem);
+    min-height: 100vh;
+}
+
+nav a:hover {
+    color: var(--gold);
+}
+
+#nav-bottom,
+#nav-top {
+    padding: .75rem 0;
+}
+
+#nav-links,
+#nav-top {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10vh;
+}
+
+#nav-bottom .icon {
+    margin: .5em;
+}
+
+#nav-links {
+    justify-content: space-around;
+    font-size: 1em;
+}
+
+#nav-top {
+    justify-content: flex-start;
+}
+
+#site-logo img {
+    width: 1.5em;
+}
+
+.words {
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+    transform: rotate(-90deg);
+}
+
+/* ----- 4. QUERIES ---- */
+/* _____ a. laptops ____ */
+/* _____ b. desktops ___ */
