@@ -94,6 +94,10 @@ article {
     margin: 0 1em 0;
 }
 
+#titles span {
+    margin: 0 .75em;
+}
+
 /* ----- 3. NAV -------- */
 nav {
     display: flex;
