@@ -91,11 +91,11 @@ article {
     border-right: .1em double var(--dark-gold);
     border-radius: 5%;
     font-size: clamp(1.25rem, 4vw, 2.5rem);
-    margin: 0 1em 0;
+    margin: 0 1em;
 }
 
 #titles span {
-    margin: 0 .75em;
+    margin: 0 .25em;
 }
 
 /* ----- 3. NAV -------- */
