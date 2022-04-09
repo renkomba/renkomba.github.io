@@ -68,6 +68,10 @@ main section {
     padding: 0 1em;
 }
 
+#img-and-header img {
+    max-width: 45vw;
+}
+
 h2 > span {
     line-height: 1.5em;
 }
