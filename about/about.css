@@ -25,7 +25,6 @@ html {
 
 body {
     display: flex;
-    /* flex-flow: row nowrap; */
     gap: 0;
 
     background-color: var(--ivory);
@@ -48,11 +47,48 @@ main {
 
     border: .25rem solid var(--dark-gold);
     border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg") 10 round;
+    height: 100vh;
     overflow-y: scroll;
 }
 
-#photo img {
+main section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+#img-and-header {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 2em;
+
     border-bottom: .25rem solid var(--dark-gold);
+    padding: 0 1em;
+}
+
+h2 > span {
+    line-height: 1.5em;
+}
+
+#lang-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo {
+    max-height: clamp(1em, 7vw, 3.5em);
+    max-width: clamp(1em, 7vw, 3.5em);
+    padding: 0 .5em;
+    object-fit: contain;
+}
+
+select {
+    font-size: 20px;
+    margin-top: .5em;
+    text-align: center;
 }
 
 /* ----- 3. NAV -------- */
