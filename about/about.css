@@ -55,21 +55,27 @@ main section {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 #img-and-header {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    gap: 2em;
+    gap: 5vw;
 
     border-bottom: .25rem solid var(--dark-gold);
-    padding: 0 1em;
+    padding: 0 3vw;
 }
 
 #img-and-header img {
-    max-width: 45vw;
+    max-width: 40vw;
+}
+
+h2 {
+    display: flex;
+    align-content: space-between;
+    font-size: clamp(.75rem, 3vw, 1.5rem);
 }
 
 h2 > span {
