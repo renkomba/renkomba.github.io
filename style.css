@@ -53,6 +53,14 @@ article {
     border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg") 10 round;
 }
 
+.container {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 100vh;
+    overflow-y: scroll;
+    align-items: center;
+}
+
 #blurb {
     font-size: clamp(1em, 2.5vw, 1.75em);
     text-align: center;
@@ -98,7 +106,7 @@ article {
     margin: 0 .25em;
 }
 
-#lang-icons {
+#lang-proficiency {
     display: flex;
     align-items: center;
     justify-content: space-around;
