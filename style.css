@@ -98,6 +98,12 @@ article {
     margin: 0 .25em;
 }
 
+#lang-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 /* ----- 3. NAV -------- */
 nav {
     display: flex;
