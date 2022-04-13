@@ -129,11 +129,29 @@ article {
 
 /* ------ c. bars ------ */
 .progress-bar-container {
+    display: flex;
+
+    height: 1.5rem;
     width: 75vw;
+
     border-radius: 0 70px 10px 0;
     background-color: var(--navy);
+    color: var(--light-ivory);
     justify-content: end;
 }
+
+#sql .progress-bar { background-image: url(images/sql.png); }
+#sheets .progress-bar { background-image: url(images/google-sheets.png); }
+#js .progress-bar { background-image: url(images/js.png); }
+#git .progress-bar { background-image: url(images/git.png); }
+#html .progress-bar { background-image: url(images/html-5.png); }
+#apps-script .progress-bar { background-image: url(images/google-apps-script.png); }
+#css .progress-bar { background-image: url(images/css-3.png); }
+#react .progress-bar { background-image: url(images/react.png); }
+#bootstrap .progress-bar { background-image: url(images/bootstrap.png); }
+#sass .progress-bar { background-image: url(images/sass.png); }
+#json .progress-bar { background-image: url(images/json.png); }
+#jquery .progress-bar { background-image: url(images/jquery.png); }
 
 .progress-bar {
     background-size: contain;
@@ -141,21 +159,9 @@ article {
     background-repeat: no-repeat;
     background-color: var(--light-navy);
     color: var(--light-ivory);
+    margin: .5rem;
     width: 60%;
 }
-
-#sql { background-image: url(images/sql.png); }
-#sheets { background-image: url(images/google-sheets.png); }
-#js { background-image: url(images/js.png); }
-#git { background-image: url(images/git.png); }
-#html { background-image: url(images/html-5.png); }
-#apps-script { background-image: url(images/google-apps-script.png); }
-#css { background-image: url(images/css-3.png); }
-#react { background-image: url(images/react.png); }
-#bootstrap { background-image: url(images/bootstrap.png); }
-#sass { background-image: url(images/sass.png); }
-#json { background-image: url(images/json.png); }
-#jquery { background-image: url(images/jquery.png); }
 
 /* ----- 3. NAV -------- */
 nav {
