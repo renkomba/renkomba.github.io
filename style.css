@@ -199,6 +199,11 @@ header {
     align-items: center;
     align-content: center;
     min-height: 100vh;
+}
+
+#site-logo img {
+    height: 1.5em;
+}
 
 #nav-top {
     display: grid;
@@ -212,7 +217,7 @@ header {
     position: sticky;
 }
 
-#nav-bottom { display: none; }
+nav#laptop-desktop { display: none; }
 
 nav a:hover {
     color: var(--gold);
