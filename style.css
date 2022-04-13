@@ -194,16 +194,20 @@ main {
 }
 
 /* ----- 3. NAV -------- */
-#nav-top {
-    display: flex;
+header {
+    display: grid;
     align-items: center;
-    flex-flow: row nowrap;
-    flex-shrink: 0;
-    justify-content: space-between;
+    align-content: center;
+    min-height: 100vh;
+
+#nav-top {
+    display: grid;
+    grid-template-areas: "left logo right";
+    align-items: center;
+    justify-content: flex-start;
     
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
-    min-height: 100vh;
     padding: .75rem .25rem;
     position: sticky;
 }
@@ -218,9 +222,9 @@ nav a:hover {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
-    gap: 10vh;
-    justify-content: space-around;
+    justify-content: space-evenly;
     font-size: 1em;
+    width: 100%;
 }
 
 #site-logo img {
