@@ -196,7 +196,7 @@ main {
 }
 
 /* ----- 3. NAV -------- */
-nav {
+.nav-top {
     display: flex;
     align-items: center;
     flex-flow: column wrap-reverse;
@@ -206,6 +206,7 @@ nav {
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
     min-height: 100vh;
+    position: sticky;
 }
 
 nav a:hover {
@@ -214,14 +215,14 @@ nav a:hover {
 
 #nav-bottom,
 #nav-top {
-    padding: .75rem 0;
+    padding: .75rem .25rem;
 }
 
 #nav-links,
 #nav-top {
     display: flex;
     align-items: center;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     gap: 10vh;
 }
 
@@ -242,15 +243,71 @@ nav a:hover {
     width: 1.5em;
 }
 
-.words {
+/* .words {
     align-items: center;
     height: fit-content;
     justify-content: center;
     transform: rotate(-90deg);
-}
+} */
 
 /* ----- 4. QUERIES ---- */
-/* _____ a. laptops ____ */
+/* _____ a. tablets ____ */
+@media only screen and (min-width: 426px) {
+    nav {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap-reverse;
+        flex-shrink: 0;
+        justify-content: space-between;
+    
+        background-color: var(--navy);
+        font-size: clamp(.5rem, 5vw, 3rem);
+        min-height: 100vh;
+    }
+    
+    nav a:hover {
+        color: var(--gold);
+    }
+    
+    #nav-bottom,
+    #nav-top {
+        padding: .75rem 0;
+    }
+    
+    #nav-links,
+    #nav-top {
+        display: flex;
+        align-items: center;
+        flex-flow: column nowrap;
+        gap: 10vh;
+    }
+    
+    #nav-bottom .icon {
+        margin: .5em;
+    }
+    
+    #nav-links {
+        justify-content: space-around;
+        font-size: 1em;
+    }
+    
+    #nav-top {
+        justify-content: flex-start;
+    }
+    
+    #site-logo img {
+        width: 1.5em;
+    }
+    
+    .words {
+        align-items: center;
+        height: fit-content;
+        justify-content: center;
+        transform: rotate(-90deg);
+    }
+}
+
+/* _____ b. laptops ____ */
 @media only screen and (min-width: 768px) {
     #blurb {
         display: flex;
@@ -273,7 +330,7 @@ nav a:hover {
     }
 }
 
-/* _____ b. desktops ___ */
+/* _____ c. desktops ___ */
 @media only screen and (min-width: 1025px) {
     article {
         flex-direction: row;
