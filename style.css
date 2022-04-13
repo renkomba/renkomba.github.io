@@ -129,7 +129,7 @@ article {
 
 /* ------ c. bars ------ */
 .progress-bar-container {
-    height: 1.5rem;
+    height: fit-content;
     width: 75vw;
 
     background-color: var(--navy);
@@ -151,17 +151,17 @@ article {
 #jquery .progress-bar { background-image: url(images/jquery.png); }
 
 .progress-bar {
-    background-size: contain;
+    background-size: 1rem auto;
     background-position: 1vw;
     background-repeat: no-repeat;
-    background-color: var(--light-navy);
+    background-color: hsl(208, 100%, 87%, 1);
     border-radius: 0 70px 10px 0;
-    color: var(--light-ivory);
+    color: var(--navy);
     margin: .25em;
     padding: .75em;
     text-align: right;
 
-    height: 1.25em;
+    height: fit-content;
     width: 60%;
 }
 
