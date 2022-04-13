@@ -167,7 +167,7 @@ article {
     width: 60%;
 }
 
-.progress-bar .logo {
+.progress-bar i {
     background-color: var(--ivory);
     background-position: center;
     background-repeat: no-repeat;
