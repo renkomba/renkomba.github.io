@@ -129,15 +129,12 @@ article {
 
 /* ------ c. bars ------ */
 .progress-bar-container {
-    display: flex;
-
     height: 1.5rem;
     width: 75vw;
 
-    border-radius: 0 70px 10px 0;
     background-color: var(--navy);
+    border-radius: 0 70px 10px 0;
     color: var(--light-ivory);
-    justify-content: end;
 }
 
 #sql .progress-bar { background-image: url(images/sql.png); }
@@ -158,8 +155,13 @@ article {
     background-position: 1vw;
     background-repeat: no-repeat;
     background-color: var(--light-navy);
+    border-radius: 0 70px 10px 0;
     color: var(--light-ivory);
-    margin: .5rem;
+    margin: .25em;
+    padding: .75em;
+    text-align: right;
+
+    height: 1.25em;
     width: 60%;
 }
 
