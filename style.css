@@ -106,6 +106,11 @@ article {
     margin: 0 .25em;
 }
 
+#skills-by-number {
+    display: grid;
+    justify-items: center;
+}
+
 /* ----- b. logos ----- */
 #lang-proficiency {
     display: grid;
@@ -113,19 +118,12 @@ article {
     justify-content: start;
 }
 
-#lang-proficiency > div {
+/* #lang-proficiency > div {
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
     margin: .25em 0;
-}
-
-.logo {
-    max-height: clamp(1em, 7vw, 3.5em);
-    max-width: clamp(1em, 7vw, 3.5em);
-    padding: 0 .5em;
-    object-fit: contain;
-}
+} */
 
 /* ------ c. bars ------ */
 .progress-bar-container {
@@ -133,36 +131,53 @@ article {
     width: 75vw;
 
     background-color: var(--navy);
-    border-radius: 0 70px 10px 0;
+    border-radius: 20px 70px 10px 20px;
     color: var(--light-ivory);
+    margin: .5em;
+    padding: .15em;
 }
 
-#sql .progress-bar { background-image: url(images/sql.png); }
-#sheets .progress-bar { background-image: url(images/google-sheets.png); }
-#js .progress-bar { background-image: url(images/js.png); }
-#git .progress-bar { background-image: url(images/git.png); }
-#html .progress-bar { background-image: url(images/html-5.png); }
-#apps-script .progress-bar { background-image: url(images/google-apps-script.png); }
-#css .progress-bar { background-image: url(images/css-3.png); }
-#react .progress-bar { background-image: url(images/react.png); }
-#bootstrap .progress-bar { background-image: url(images/bootstrap.png); }
-#sass .progress-bar { background-image: url(images/sass.png); }
-#json .progress-bar { background-image: url(images/json.png); }
-#jquery .progress-bar { background-image: url(images/jquery.png); }
+#sql i { background-image: url(images/sql.png); }
+#sheets i { background-image: url(images/google-sheets.png); }
+#js i { background-image: url(images/js.png); }
+#git i { background-image: url(images/git.png); }
+#html i { background-image: url(images/html-5.png); }
+#apps-script i { background-image: url(images/google-apps-script.png); }
+#css i { background-image: url(images/css-3.png); }
+#react i { background-image: url(images/react.png); }
+#bootstrap i { background-image: url(images/bootstrap.png); }
+#sass i { background-image: url(images/sass.png); }
+#json i { background-image: url(images/json.png); }
+#jquery i { background-image: url(images/jquery.png); }
 
 .progress-bar {
-    background-size: 1rem auto;
+    display: flex;
+    justify-content: space-between;
+
+    background-size: 1.25rem auto;
     background-position: 1vw;
     background-repeat: no-repeat;
     background-color: hsl(208, 100%, 87%, 1);
-    border-radius: 0 70px 10px 0;
+    border-radius: 20px 70px 10px 20px;
     color: var(--navy);
     margin: .25em;
-    padding: .75em;
     text-align: right;
 
     height: fit-content;
     width: 60%;
+}
+
+.progress-bar .logo {
+    background-color: var(--ivory);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1.5rem auto;
+    padding: .5em 1em;
+}
+
+.progress-bar .text {
+    align-self: center;
+    margin-right: 1em;
 }
 
 /* ----- 3. NAV -------- */
