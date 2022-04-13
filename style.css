@@ -24,9 +24,6 @@ html {
 
 body {
     display: grid;
-    grid-template-areas: "nav"
-                         "main"
-                         "footer";
 
     background-color: var(--ivory);
     color: var(--light-navy);
@@ -63,7 +60,6 @@ article {
 }
 
 main {
-    grid-area: main;
     display: grid;
     margin: 1rem 1.5rem;
 }
@@ -198,14 +194,13 @@ main {
 }
 
 /* ----- 3. NAV -------- */
-#nav-top,
-#nav-bottom {
+#nav-top {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
     flex-shrink: 0;
     justify-content: space-between;
-
+    
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
     min-height: 100vh;
@@ -213,8 +208,7 @@ main {
     position: sticky;
 }
 
-#nav-top { grid-area: nav; }
-#nav-bottom { grid-area: footer; }
+#nav-bottom { display: none; }
 
 nav a:hover {
     color: var(--gold);
@@ -225,31 +219,23 @@ nav a:hover {
     align-items: center;
     flex-flow: row nowrap;
     gap: 10vh;
-}
-
-#nav-bottom .icon {
-    margin: .5em;
-}
-
-#nav-links {
     justify-content: space-around;
     font-size: 1em;
-}
-
-#nav-top {
-    justify-content: flex-start;
 }
 
 #site-logo img {
     width: 1.5em;
 }
 
-/* .words {
-    align-items: center;
-    height: fit-content;
+/* ----- 4. FOOTER ----- */
+footer {
+    display: flex;
     justify-content: center;
-    transform: rotate(-90deg);
-} */
+}
+
+footer .icon {
+    margin: .5em;
+}
 
 /* ----- 4. QUERIES ---- */
 /* _____ a. tablets ____ */
@@ -285,6 +271,10 @@ nav a:hover {
         align-items: center;
         flex-flow: column nowrap;
         gap: 10vh;
+    }
+
+    #nav-bottom {
+        display: flex;
     }
     
     #nav-bottom .icon {
