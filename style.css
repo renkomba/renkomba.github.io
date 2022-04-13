@@ -106,10 +106,18 @@ article {
     margin: 0 .25em;
 }
 
+/* ----- b. logos ----- */
 #lang-proficiency {
-    display: flex;
+    display: grid;
     align-items: center;
-    justify-content: space-around;
+    justify-content: start;
+}
+
+#lang-proficiency > div {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: .25em 0;
 }
 
 .logo {
@@ -118,6 +126,36 @@ article {
     padding: 0 .5em;
     object-fit: contain;
 }
+
+/* ------ c. bars ------ */
+.progress-bar-container {
+    width: 75vw;
+    border-radius: 0 70px 10px 0;
+    background-color: var(--navy);
+    justify-content: end;
+}
+
+.progress-bar {
+    background-size: contain;
+    background-position: 1vw;
+    background-repeat: no-repeat;
+    background-color: var(--light-navy);
+    color: var(--light-ivory);
+    width: 60%;
+}
+
+#sql { background-image: url(images/sql.png); }
+#sheets { background-image: url(images/google-sheets.png); }
+#js { background-image: url(images/js.png); }
+#git { background-image: url(images/git.png); }
+#html { background-image: url(images/html-5.png); }
+#apps-script { background-image: url(images/google-apps-script.png); }
+#css { background-image: url(images/css-3.png); }
+#react { background-image: url(images/react.png); }
+#bootstrap { background-image: url(images/bootstrap.png); }
+#sass { background-image: url(images/sass.png); }
+#json { background-image: url(images/json.png); }
+/* # { background-image: url(images/.png); } */
 
 /* ----- 3. NAV -------- */
 nav {
