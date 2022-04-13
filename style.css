@@ -23,9 +23,10 @@ html {
 }
 
 body {
-    display: flex;
-    /* flex-flow: row nowrap; */
-    gap: 0;
+    display: grid;
+    grid-template-areas: "nav"
+                         "main"
+                         "footer";
 
     background-color: var(--ivory);
     color: var(--light-navy);
@@ -62,6 +63,7 @@ article {
 }
 
 main {
+    grid-area: main;
     display: grid;
     margin: 1rem 1.5rem;
 }
@@ -196,30 +198,29 @@ main {
 }
 
 /* ----- 3. NAV -------- */
-.nav-top {
+#nav-top,
+#nav-bottom {
     display: flex;
     align-items: center;
-    flex-flow: column wrap-reverse;
+    flex-flow: row nowrap;
     flex-shrink: 0;
     justify-content: space-between;
 
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
     min-height: 100vh;
+    padding: .75rem .25rem;
     position: sticky;
 }
+
+#nav-top { grid-area: nav; }
+#nav-bottom { grid-area: footer; }
 
 nav a:hover {
     color: var(--gold);
 }
 
-#nav-bottom,
-#nav-top {
-    padding: .75rem .25rem;
-}
-
-#nav-links,
-#nav-top {
+#nav-links {
     display: flex;
     align-items: center;
     flex-flow: row nowrap;
@@ -253,6 +254,10 @@ nav a:hover {
 /* ----- 4. QUERIES ---- */
 /* _____ a. tablets ____ */
 @media only screen and (min-width: 426px) {
+    body {
+        display: flex;
+    }
+
     nav {
         display: flex;
         align-items: center;
