@@ -61,6 +61,20 @@ article {
     align-items: center;
 }
 
+main {
+    display: grid;
+    margin: 1rem 1.5rem;
+}
+
+#img-and-header {
+    text-align: center;
+}
+
+#bigger-blurb p span {
+    font-weight: 900;
+    text-decoration: double;
+}
+
 #blurb {
     font-size: clamp(1em, 2.5vw, 1.75em);
     text-align: center;
