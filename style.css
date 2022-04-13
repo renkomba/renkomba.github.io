@@ -155,7 +155,7 @@ article {
 #bootstrap { background-image: url(images/bootstrap.png); }
 #sass { background-image: url(images/sass.png); }
 #json { background-image: url(images/json.png); }
-/* # { background-image: url(images/.png); } */
+#jquery { background-image: url(images/jquery.png); }
 
 /* ----- 3. NAV -------- */
 nav {
