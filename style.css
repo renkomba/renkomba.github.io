@@ -196,7 +196,6 @@ body { background-color: var(--ivory); }
     background-color: hsl(208, 100%, 87%, 1);
     border-radius: 20px 70px 10px 20px;
     color: var(--navy);
-    margin: .25em;
     text-align: right;
 
     height: fit-content;
