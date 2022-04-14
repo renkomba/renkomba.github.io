@@ -138,14 +138,19 @@ body { background-color: var(--ivory); }
 
 /* ------ e. main ------ */
 /* ~~ i. bigger-blurb ~~ */
-#bigger-blurb p span {
+#bigger-blurb .text span {
     font-weight: 900;
     text-decoration: double;
+}
+
+#bigger-blurb .text {
+    font-size: clamp(.75rem, 4.5vw, 3rem);
 }
 
 #img-and-header {
     text-align: center;
 }
+
 /* ii. skills-by-numbers */
 #lang-proficiency {
     display: grid;
