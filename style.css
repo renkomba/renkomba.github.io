@@ -9,8 +9,9 @@
 ===========================
 */
 
-/* ----- 1. GLOBAL ----- */
+/* -1. GLOBAL VARIABLES- */
 :root {
+    --border: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg");
     --ivory: hsl(60, 100%, 97%, 1);
     --gold: hsl(51, 100%, 50%, 1);
     --dark-gold: hsl(43, 74%, 49%, 1);
@@ -18,17 +19,15 @@
     --light-navy: hsl(208, 100%, 20%, 1);
 }
 
+/* -2. GLOBAL TYPOGRAPHY- */
 html {
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 body {
-    display: grid;
-
-    background-color: var(--ivory);
     color: var(--light-navy);
     font-family: Philosopher;
-    margin: 0;
 }
 
 a {
@@ -37,26 +36,32 @@ a {
     text-decoration: none;
 }
 
-/* ----- 2. MAIN ------- */
-article {
+/* ----- 3. LAYOUT ----- */
+body {
     display: flex;
     align-content: center;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    flex-grow: 1;
-    gap: 1rem;
-
-    border: .25rem solid var(--dark-gold);
-    border-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQO_Nv5Z6vd4WVSkhwRYK1FgRV74wMwJmpVaA:7-themes.com/data-images/collection/6/4471847-gold-wallpapers.jpg") 10 round;
+    margin: 0;
 }
 
 .container {
-    display: flex;
-    flex-flow: column nowrap;
+    display: grid;
+    align-items: center;
     height: 100vh;
     overflow-y: scroll;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: grid;
     align-items: center;
+    align-content: center;
+    min-height: 100vh;
 }
 
 main {
@@ -64,15 +69,28 @@ main {
     margin: 1rem 1.5rem;
 }
 
-#img-and-header {
-    text-align: center;
+nav#mobile {
+    display: grid;
+    align-items: center;
+    justify-content: flex-start;
 }
 
-#bigger-blurb p span {
-    font-weight: 900;
-    text-decoration: double;
+/* ---- 4. AESTHETIC --- */
+/* ------ a. body ------ */
+body { background-color: var(--ivory); }
+
+/* ---- b. container --- */
+.container {
+    border: .25rem solid var(--dark-gold);
+    border-image: var(--border) 10 round;
 }
 
+/* ----- c. footer ----- */
+/* footer .icon {
+    margin: .5em;
+} */
+
+/* ----- d. header ----- */
 #blurb {
     font-size: clamp(1em, 2.5vw, 1.75em);
     text-align: center;
@@ -118,26 +136,23 @@ main {
     margin: 0 .25em;
 }
 
-#skills-by-number {
-    display: grid;
-    justify-items: center;
+/* ------ e. main ------ */
+/* ~~ i. bigger-blurb ~~ */
+#bigger-blurb p span {
+    font-weight: 900;
+    text-decoration: double;
 }
 
-/* ----- b. logos ----- */
+#img-and-header {
+    text-align: center;
+}
+/* ii. skills-by-numbers */
 #lang-proficiency {
     display: grid;
     align-items: center;
     justify-content: start;
 }
 
-/* #lang-proficiency > div {
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
-    margin: .25em 0;
-} */
-
-/* ------ c. bars ------ */
 .progress-bar-container {
     height: fit-content;
     width: 75vw;
@@ -161,6 +176,8 @@ main {
 #sass i { background-image: url(images/sass.png); }
 #json i { background-image: url(images/json.png); }
 #jquery i { background-image: url(images/jquery.png); }
+#python i { background-image: url(images/python.png); }
+#node-js i { background-image: url(images/node-js.png); }
 
 .progress-bar {
     display: flex;
@@ -193,57 +210,25 @@ main {
     margin-right: 1em;
 }
 
-/* ----- 3. NAV -------- */
-header {
-    display: grid;
-    align-items: center;
-    align-content: center;
-    min-height: 100vh;
-}
-
+/* ------- f. nav ------ */
 #site-logo img {
     height: 1.5em;
 }
 
 #nav-top {
-    display: grid;
-    grid-template-areas: "left logo right";
-    align-items: center;
-    justify-content: flex-start;
-    
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
     padding: .75rem .25rem;
     position: sticky;
 }
 
+
+nav a:hover { color: var(--gold); }
 nav#laptop-desktop { display: none; }
 
-nav a:hover {
-    color: var(--gold);
-}
-
-#nav-links {
-    display: flex;
-    align-items: center;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    font-size: 1em;
-    width: 100%;
-}
-
-#site-logo img {
-    width: 1.5em;
-}
-
-/* ----- 4. FOOTER ----- */
-footer {
-    display: flex;
-    justify-content: center;
-}
-
-footer .icon {
-    margin: .5em;
+#skills-by-number {
+    display: grid;
+    justify-items: center;
 }
 
 /* ----- 4. QUERIES ---- */
