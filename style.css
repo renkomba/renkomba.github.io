@@ -48,6 +48,7 @@ body {
 .container {
     display: grid;
     align-items: center;
+    height: calc(100%-.5em);
     overflow-y: scroll;
 }
 
@@ -224,8 +225,8 @@ body { background-color: var(--ivory); }
 nav#mobile {
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
-    padding: .75rem .25rem;
-    position: sticky;
+    padding: .25rem;
+    /* position: sticky; */
 }
 
 nav a:hover { color: var(--gold); }
