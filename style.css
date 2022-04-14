@@ -220,7 +220,7 @@ body { background-color: var(--ivory); }
     height: 1.5em;
 }
 
-#nav-top {
+nav#mobile {
     background-color: var(--navy);
     font-size: clamp(.5rem, 5vw, 3rem);
     padding: .75rem .25rem;
