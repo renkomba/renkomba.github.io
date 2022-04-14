@@ -38,7 +38,7 @@ a {
 
 /* ----- 3. LAYOUT ----- */
 body {
-    display: flex;
+    display: grid;
     align-content: center;
     align-items: center;
     justify-content: center;
@@ -48,7 +48,6 @@ body {
 .container {
     display: grid;
     align-items: center;
-    height: 100vh;
     overflow-y: scroll;
 }
 
@@ -70,9 +69,9 @@ main {
 }
 
 nav#mobile {
-    display: grid;
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-evenly;
 }
 
 /* ---- 4. AESTHETIC --- */
@@ -151,6 +150,8 @@ body { background-color: var(--ivory); }
     text-align: center;
 }
 
+#img-and-header img { width: 80vw; }
+
 /* ii. skills-by-numbers */
 #lang-proficiency {
     display: grid;
@@ -226,7 +227,6 @@ nav#mobile {
     padding: .75rem .25rem;
     position: sticky;
 }
-
 
 nav a:hover { color: var(--gold); }
 nav#laptop-desktop { display: none; }
