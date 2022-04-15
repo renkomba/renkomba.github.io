@@ -1,6 +1,6 @@
 const progressBars = document.querySelectorAll('.progress-bar');
 
-// days as of April 14th 2022
+// months as of April 14th 2022
 const monthsBuildingWith = {
     "apps-script": 16.5,
     "css": 5,
@@ -32,10 +32,10 @@ const fillBar = () => {
         let months = monthsBuildingWith[id];
         let [percentage, mastery] = [
             months > 6 ? 100 : months/6,
-            months > 6 ? 'Expert' :
-                months >= 5 ? 'Experienced' :
-                months >= 3 ? 'Competent' :
-                months <= 1 ? 'Student' : 'Novice'
+            months > 6 ? 'Creative' :
+                months >= 5 ? 'Confident' :
+                months >= 3 ? 'Experienced' :
+                months <= 1 ? 'Student' : 'Competent'
         ];
         // console.log(`Lang: ${id}\nMonths: ${months}\nLevel: ${mastery}`);
 
