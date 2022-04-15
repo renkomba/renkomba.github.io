@@ -30,7 +30,7 @@ const fillBar = () => {
         let id = bar.parentNode.parentNode.id;
         let months = monthsBuildingWith[id];
         let [percentage, mastery] = [
-            months > 6 ? 100 : Math.floor(months/6),
+            months > 6 ? 100 : Math.round(100 * (months/6) ),
             months > 6 ? 'Creative' :
                 months >= 5 ? 'Confident' :
                 months >= 3 ? 'Experienced' :
