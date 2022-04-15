@@ -214,6 +214,7 @@ body { background-color: var(--ivory); }
 .progress-bar .text {
     align-self: center;
     margin-right: 1em;
+    font-size: .5em;
 }
 
 /* ------- f. nav ------ */
