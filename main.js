@@ -24,5 +24,22 @@ const monthsBuildingWith = {
  * source: find psych source
  */
 const fillBar = () => {
-    addEventListener
+    let bars = [...progressBars];
+
+    for (let bar of bars) {
+        let id = bar.parentNode.parentNode.id;
+        let months = monthsBuildingWith[id];
+        let [percentage, mastery] = [
+            months > 6 ? 100 : months/6,
+            months > 6 ? 'Expert' :
+                months >= 5 ? 'Experienced' :
+                months >= 3 ? 'Competent' :
+                'Novice'
+        ];
+
+        bar.style.width = `${percentage}%`;
+        bar.querySelector('.text').innerHTML = mastery;
+    }
 }
+
+fillBar();
