@@ -2,20 +2,20 @@ const progressBars = document.querySelectorAll('.progress-bar');
 
 // days as of April 14th 2022
 const monthsBuildingWith = {
-    "#apps-script": 16.5,
-    "#css": 5,
-    "#jquery": 1,
-    "#react": 1,
-    "#sheets": 22,
-    "#js": 16,
-    "#git": 4,
-    "#html": 4,
-    "#sass": 1,
-    "#bootstrap": 1,
-    "#json": 1.5,
-    "#sql": 1,
-    "#python": 6.5,
-    "#node-js": 1
+    "apps-script": 16.5,
+    "css": 5,
+    "jquery": 1,
+    "react": 1,
+    "sheets": 22,
+    "js": 16,
+    "git": 4,
+    "html": 4,
+    "sass": 1,
+    "bootstrap": 1,
+    "json": 1.5,
+    "sql": 1,
+    "python": 6.5,
+    "node-js": 1
 }
 
 /*
