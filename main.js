@@ -34,8 +34,9 @@ const fillBar = () => {
             months > 6 ? 'Expert' :
                 months >= 5 ? 'Experienced' :
                 months >= 3 ? 'Competent' :
-                'Novice'
+                months <= 1 ? 'Understands' : 'Novice'
         ];
+        console.log(`Lang: ${id}\nMonths: ${months}\nLevel: ${mastery}`);
 
         bar.style.width = `${percentage}%`;
         bar.querySelector('.text').innerHTML = mastery;
