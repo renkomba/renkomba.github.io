@@ -25,7 +25,6 @@ const monthsBuildingWith = {
  */
 const fillBar = () => {
     let bars = [...progressBars];
-    debugger;
 
     for (let bar of bars) {
         let id = bar.parentNode.parentNode.id;
@@ -37,7 +36,7 @@ const fillBar = () => {
                 months >= 3 ? 'Experienced' :
                 months <= 1 ? 'Student' : 'Competent'
         ];
-        // console.log(`Lang: ${id}\nMonths: ${months}\nLevel: ${mastery}`);
+        console.log(`Lang: ${id}\nMonths: ${months}\nLevel: ${mastery}`);
 
         bar.style.width = `${percentage}%`;
         bar.querySelector('.text').innerHTML = mastery;
