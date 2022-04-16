@@ -190,7 +190,7 @@ body { background-color: var(--ivory); }
     display: flex;
     justify-content: space-between;
 
-    background-size: 1.25rem auto;
+    background-size: 10vw auto;
     background-position: 1vw;
     background-repeat: no-repeat;
     background-color: hsl(208, 100%, 87%, 1);
@@ -214,7 +214,7 @@ body { background-color: var(--ivory); }
 .progress-bar .text {
     align-self: center;
     margin-right: 1em;
-    font-size: .5em;
+    font-size: .75em;
 }
 
 /* ------- f. nav ------ */
